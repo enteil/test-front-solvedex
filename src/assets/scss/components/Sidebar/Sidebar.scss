@@ -1,0 +1,33 @@
+.sidebar-component {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  background: $custom_black;
+  .sidebar-menu {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    .sidebar-menu-item {
+      display: flex;
+      width: 85%;
+      height: 55px;
+      color: white;
+      align-items: center;
+      text-align: left;
+      padding-left: 15%;
+      &:hover {
+        transition: 0.2s;
+        color: white;
+        background: $custom_grey;
+        cursor: pointer;
+      }
+      &.active {
+        background: $default_background;
+        color: $custom_black;
+      }
+    }
+  }
+}

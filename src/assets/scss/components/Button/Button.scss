@@ -1,0 +1,26 @@
+.normal-button {
+  margin: $size_3;
+  padding: $size_2 $size_4;
+  width: $default_width_button;
+  min-width: 200px;
+  height: $default_height_button;
+  border-radius: $size_2;
+  cursor: pointer;
+}
+.primary-button {
+  background: $custom_blue;
+  color: white;
+  border: 1px solid $custom_blue;
+  transition: 0.3s;
+  &:hover {
+    transition: 0.3s;
+    background: #2323a9;
+    border: 1px solid #2323a9;
+  }
+}
+
+.secondary-button {
+  background: white;
+  color: $custom_black;
+  border: 1px solid $custom_black;
+}

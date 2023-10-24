@@ -1,0 +1,24 @@
+.normal-input {
+  margin: $size_3 0px;
+  display: flex;
+  flex-direction: column;
+  gap: $size_2;
+  // width: $default_width_input;
+
+  label {
+    display: block;
+  }
+  input {
+    color: $custom_grey;
+    width: $default_width_input;
+    height: $default_height_input;
+    border-radius: $default_radius;
+    border: 1px solid $custom_black;
+    padding: 0px $size_4;
+
+    &:focus {
+      outline: none;
+      border-color: none; /* Un color de borde personalizado cuando está en foco */
+    }
+  }
+}

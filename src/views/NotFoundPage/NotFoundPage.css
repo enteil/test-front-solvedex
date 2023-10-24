@@ -1,0 +1,27 @@
+/* NotFound.css */
+.not-found-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+.error-code {
+  font-size: 10rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.error-text {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.error-description {
+  font-size: 1rem;
+  text-align: center;
+  max-width: 60%;
+}

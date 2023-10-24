@@ -1,0 +1,22 @@
+.login-view {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(0deg, $custom_black, $custom_blue);
+  .login-form {
+    .login-form-container {
+      width: 500px;
+      height: 400px;
+      background: white;
+      box-shadow: $default_shadow;
+      border-radius: $default_radius;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}

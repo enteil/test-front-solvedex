@@ -1,0 +1,48 @@
+$default_shadow: 0px 18px 32px 0px #15202a0d;
+$default_background: #f9f9f9;
+$default_radius: 10px;
+
+$default_width_input: 350px;
+$default_height_input: 50px;
+
+$default_width_button: auto;
+$default_height_button: 50px;
+
+$size_2: 8px;
+$size_3: 12px;
+$size_4: 16px;
+$size_5: 20px;
+$size_6: 24px;
+$size_7: 32px;
+$size_8: 36px;
+$size_9: 40px;
+$size_10: 44px;
+$size_11: 48px;
+$size_12: 52px;
+
+$custom_black: #353535;
+$custom_grey: #687c8e;
+$custom_blue: #126dff;
+
+@import "./scss/layouts/DashboardLayout/DashboardLayout.scss";
+@import "./scss/views/Auth/Login/Login.scss";
+@import "./scss/components/Input/Input.scss";
+@import "./scss/components/Select/Select.scss";
+@import "./scss/components/Button/Button.scss";
+@import "./scss/components/Sidebar/Sidebar.scss";
+
+.typography_input {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+}
+.typography_input_label {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+}
+.typography_button {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+}

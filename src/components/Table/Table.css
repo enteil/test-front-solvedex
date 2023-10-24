@@ -1,0 +1,26 @@
+/* Estilos para la tabla */
+.table-container {
+  overflow-x: auto; /* Habilitar scroll horizontal */
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table {
+  width: 100%; /* Para asegurarte que hay algo que desplazar */
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 10px 20px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+/* Estilos para la columna fija */
+td.sticky-column {
+  background-color: #f2f2f2; /* Puedes elegir otro color de fondo si lo prefieres */
+  position: sticky;
+  left: 0; /* Asegura que la columna se queda pegada al lado izquierdo */
+  z-index: 1; /* Para que se superponga sobre las otras columnas cuando desplaces */
+}
