@@ -20,10 +20,10 @@ const Sidebar = () => {
   }
 
   const routes = [
-    { path: "", title: "Blogs" },
+    { path: "", title: "Public Blogs" },
     { path: "mine-blogs", title: "My Blogs" },
+    { path: "logout", title: "Logout" },
   ];
-
   return (
     <div className="sidebar-component">
       <div className="sidebar-menu">

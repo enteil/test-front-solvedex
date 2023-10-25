@@ -8,6 +8,7 @@ $default_height_input: 50px;
 $default_width_button: auto;
 $default_height_button: 50px;
 
+$size_1: 4px;
 $size_2: 8px;
 $size_3: 12px;
 $size_4: 16px;
@@ -26,10 +27,17 @@ $custom_blue: #126dff;
 
 @import "./scss/layouts/DashboardLayout/DashboardLayout.scss";
 @import "./scss/views/Auth/Login/Login.scss";
+@import "./scss/views/Dashboard/Dashboard.scss";
+@import "./scss/views/Dashboard/MyBlogs.scss";
+@import "./scss/views/Dashboard/Blog.scss";
+
 @import "./scss/components/Input/Input.scss";
 @import "./scss/components/Select/Select.scss";
 @import "./scss/components/Button/Button.scss";
 @import "./scss/components/Sidebar/Sidebar.scss";
+@import "./scss/components/BlogCard/BlogCard.scss";
+@import "./scss/components/EmptyCard/EmptyCard.scss";
+@import "./scss/components/BlogMine/BlogMine.scss";
 
 .typography_input {
   font-size: 12px;

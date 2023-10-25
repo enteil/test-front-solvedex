@@ -1,0 +1,104 @@
+.blog-view {
+  .title-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: $size-3;
+    align-items: center;
+  }
+  .comments-section {
+    margin-top: $size-3;
+    .comment {
+      border: 1px solid #e1e1e1;
+      padding: $size-3;
+      margin-top: $size-3;
+      border-radius: $size-2;
+      box-shadow: 0px 2px 5px #00000019;
+      background-color: #f7f7f7;
+
+      .reply-box {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+      }
+      .comment-text-box {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .comment-text {
+          p {
+            margin: $size-1 0px;
+          }
+          .comment-date {
+            font-size: $size-2;
+            color: #888;
+          }
+        }
+
+        .comment-reply-button {
+          button {
+            padding: $size-1 $size-3;
+            border-radius: $size-2;
+            cursor: pointer;
+            background: $custom_blue;
+            color: white;
+            border: 1px solid $custom_blue;
+            transition: 0.3s;
+            &:hover {
+              transition: 0.3s;
+              background: #2323a9;
+              border: 1px solid #2323a9;
+            }
+          }
+        }
+      }
+      .replies {
+        margin-left: $size-4;
+        .reply {
+          border-left: 3px solid #ddd;
+          padding-left: $size-3;
+          margin-top: $size-3;
+          &:nth-child(odd) {
+            background-color: #f0f0f0;
+          }
+        }
+      }
+      div {
+        .comment-reply-button {
+          button {
+            padding: $size-1 $size-3;
+            border-radius: $size-2;
+            cursor: pointer;
+            background: #126dff;
+            color: white;
+            border: 1px solid #126dff;
+            transition: 0.3s;
+          }
+        }
+      }
+    }
+  }
+  .comment-reply-button {
+    button {
+      padding: $size-1 $size-3;
+      border-radius: $size-2;
+      cursor: pointer;
+      background: #126dff;
+      color: white;
+      border: 1px solid #126dff;
+      transition: 0.3s;
+    }
+  }
+  strong {
+    color: #333;
+  }
+}
+
+.modal-reply-content {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}

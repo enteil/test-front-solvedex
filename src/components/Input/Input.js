@@ -1,6 +1,6 @@
 import React from "react";
 
-export const Input = ({ label, name, value, setState, variant, ...rest }) => {
+export const Input = ({ label, name, value, setState, ...rest }) => {
   const handleChange = (e) => {
     setState(e.target.value);
   };
