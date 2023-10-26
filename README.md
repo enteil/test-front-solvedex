@@ -3,7 +3,7 @@
 Development of a frontend as part of Solvedex's technical assessment.
 This solution uses React.js for the frontend, react-state to manage states, axios for backend requests, and SASS as a style preprocessor.
 
-## Backend Specifications 🔧
+## Frontend Specifications 🎨
 
 The developed meets the following requirements:
 
