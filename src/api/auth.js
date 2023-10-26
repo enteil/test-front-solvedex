@@ -11,3 +11,13 @@ export const CheckEmailAPI = async ({ email }) => {
   });
   return response.data;
 };
+
+export const LogoutAPI = async () => {
+  const response = await axios.post("/auth/logout", {});
+  return response.data;
+};
+
+export const RegisterAPI = async (data) => {
+  const response = await axios.post("/auth/register", { data });
+  return response.data;
+};

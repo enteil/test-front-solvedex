@@ -1,4 +1,4 @@
-.normal-input {
+.normal-textarea {
   margin: $size_3 0px;
   display: flex;
   flex-direction: column;
@@ -7,14 +7,14 @@
     display: block;
     font-size: $size_3;
   }
-  input {
+  textarea {
     font-family: "Cera Pro", sans-serif !important;
     color: $custom_grey;
     width: $default_width_input;
     height: $default_height_input;
     border-radius: $default_radius;
     border: 1px solid $custom_black;
-    padding: 0px $size_4;
+    padding: $size_4 $size_4;
     font-size: $size_4;
     &:focus {
       outline: none;

@@ -1,3 +1,25 @@
 .title-box {
   margin-bottom: 1rem;
 }
+.craete-blog-box {
+  padding: $size-6;
+  .create-blog-fields {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: $size-4;
+    .content-text {
+      width: 100%;
+      .normal-textarea {
+        textarea {
+          width: auto;
+        }
+      }
+    }
+  }
+  .buttons-actions {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

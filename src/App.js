@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 
 import { Login } from "./views/Auth/Login/Login";
+import { Register } from "./views/Auth/Register/Register";
 import { NotFoundPage } from "./views/NotFoundPage/NotFoundPage";
 
 import { Dashboard } from "./views/Dashboard/Dashboard";
@@ -13,7 +14,6 @@ import CheckGuest from "./middleware/checkGuest";
 import GlobalSnackbar from "./components/Snackbar/GlobalSnackbar";
 
 import { hideSnackbar } from "./store/slices/snackbarSlice";
-import { Logout } from "./views/Dashboard/Logout";
 import { Blog } from "./views/Dashboard/Blog";
 
 function App() {
@@ -37,6 +37,14 @@ function App() {
             }
           />
           <Route
+            path="/register"
+            element={
+              <CheckGuest>
+                <Register />
+              </CheckGuest>
+            }
+          />
+          <Route
             path="/dashboard"
             element={
               <CheckAuth>
@@ -47,7 +55,6 @@ function App() {
             <Route index element={<Dashboard />} />
             <Route path="mine-blogs" element={<MyBlogs />} />
             <Route path="blog" element={<Blog />} />
-            <Route path="logout" element={<Logout />} />
           </Route>
           <Route path="*" element={<NotFoundPage />} />
         </Routes>

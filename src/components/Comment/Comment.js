@@ -9,7 +9,9 @@ import {
   UpdateCommentAction,
   DeleteCommentAction,
 } from "../../store/thunks/commentThunk";
-
+import ReplyIcon from "@mui/icons-material/Reply";
+import EditIcon from "@mui/icons-material/Edit";
+import DeleteForeverIcon from "@mui/icons-material/DeleteForever";
 export const Comment = ({ data, refreshComments }) => {
   const dispatch = useDispatch();
   const [comment, setComment] = useState("");
@@ -72,12 +74,18 @@ export const Comment = ({ data, refreshComments }) => {
             : {data.content}
           </p>
         </div>
-        <div>
-          <button onClick={() => handleOpenReplyModal()}>Reply</button>
+        <div className="comment-reply-button">
+          <button onClick={() => handleOpenReplyModal()}>
+            <ReplyIcon style={{ color: "white" }} />
+          </button>
           {userState && userState.user.id === data.user.id && (
             <>
-              <button onClick={() => handleOpenUpdateModal(data)}>Edit</button>
-              <button onClick={() => handleOpenDeleteModal()}>Delete</button>
+              <button onClick={() => handleOpenUpdateModal(data)}>
+                <EditIcon style={{ color: "white" }} />
+              </button>
+              <button onClick={() => handleOpenDeleteModal()}>
+                <DeleteForeverIcon style={{ color: "white" }} />
+              </button>
             </>
           )}
         </div>

@@ -1,9 +1,10 @@
 $navbar-height: 70px;
 
 .dashboard-layout {
-  width: 100vw;
+  width: 100%;
   height: calc(100vh - #{$navbar-height});
   .dashboard-navbar {
+    width: auto;
     height: $navbar-height;
     display: flex;
     flex-direction: row;
@@ -22,15 +23,15 @@ $navbar-height: 70px;
     flex-direction: row;
     height: calc(100vh - #{$navbar-height});
     box-shadow: 0px 18px 32px 0px #15202a0d;
+    width: 100%;
     .slider-box {
-      width: 15%;
+      min-width: 15%;
     }
     .content-box {
-      width: 85%;
+      max-width: calc(85% - 3rem);
+      min-width: calc(85% - 3rem);
       padding: 1.5rem;
-      margin: 2rem;
       background: white;
-      border-radius: $default_radius;
       box-shadow: 0px 18px 32px 0px #15202a0d;
     }
   }

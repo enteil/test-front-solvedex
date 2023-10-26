@@ -37,11 +37,15 @@ export const Blog = () => {
         </div>
         <div className="blog-container">
           <p>{content}</p>
-          <p>By: {`${user.names} ${user.lastNames ? user.lastNames : ""}`}</p>
+          <p>
+            <strong>
+              By: {`${user.names} ${user.lastNames ? user.lastNames : ""}`}
+            </strong>
+          </p>
         </div>
         <div className="new-comment-section">
           <Input
-            label="Comment"
+            label="Add comment"
             name="comment"
             type="text"
             value={comment}

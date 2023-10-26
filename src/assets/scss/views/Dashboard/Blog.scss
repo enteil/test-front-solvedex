@@ -1,10 +1,19 @@
 .blog-view {
+  width: auto;
   .title-box {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: $size-3;
     align-items: center;
+  }
+  .blog-container {
+    overflow: auto;
+    flex-shrink: 0;
+    overflow-wrap: break-word;
+    p {
+      word-wrap: break-word;
+    }
   }
   .comments-section {
     margin-top: $size-3;
@@ -26,25 +35,37 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        .comment-text {
-          p {
-            margin: $size-1 0px;
-          }
+        div {
           .comment-date {
-            font-size: $size-2;
-            color: #888;
+            font-size: $size-3;
+            color: $custom_black;
+          }
+        }
+        .comment-text {
+          div {
+            p {
+              margin: $size-1 0px;
+            }
           }
         }
 
         .comment-reply-button {
+          display: flex;
+          flex-direction: row;
+          gap: 5px;
           button {
+            width: 35px;
+            height: 35px;
             padding: $size-1 $size-3;
-            border-radius: $size-2;
+            border-radius: 50%;
             cursor: pointer;
             background: $custom_blue;
             color: white;
             border: 1px solid $custom_blue;
             transition: 0.3s;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             &:hover {
               transition: 0.3s;
               background: #2323a9;
