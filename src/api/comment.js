@@ -19,6 +19,5 @@ export const DeleteCommentsAPI = async (_data) => {
   const response = await axios.post("/comment/delete", {
     data: _data,
   });
-
   return response.data;
 };

@@ -1,10 +1,12 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
+
+import { Title } from "../../../components/Title/Title";
 import Input from "../../../components/Input/Input";
 import Button from "../../../components/Button/Button";
+
 import { LoginAction } from "../../../store/thunks/authThunks";
-import { Title } from "../../../components/Title/Title";
-import { useNavigate } from "react-router-dom";
 
 export const Login = () => {
   const [email, setEmail] = useState("");

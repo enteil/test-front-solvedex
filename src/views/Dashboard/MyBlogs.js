@@ -1,12 +1,8 @@
-import { Title } from "../../components/Title/Title.js";
 import React, { useState, useEffect, useCallback } from "react";
 import { useDispatch } from "react-redux";
-import {
-  GetMineBlogsAction,
-  CreateBlogAction,
-  UpdateBlogAction,
-  DeleteBlogAction,
-} from "../../store/thunks/blogThunks.js";
+import DeleteForeverIcon from "@mui/icons-material/DeleteForever";
+
+import { Title } from "../../components/Title/Title.js";
 import { EmptyCard } from "../../components/EmptyCard/EmptyCard.js";
 import { BlogMine } from "../../components/BlogMine/BlogMine.js";
 import { Modal } from "../../components/Modal/Modal.js";
@@ -14,7 +10,14 @@ import { Input } from "../../components/Input/Input.js";
 import { TextArea } from "../../components/TextArea/TextArea.js";
 import { Button } from "../../components/Button/Button.js";
 import { Checkbox } from "../../components/Checkbox/Checkbox.js";
-import DeleteForeverIcon from "@mui/icons-material/DeleteForever";
+
+import {
+  GetMineBlogsAction,
+  CreateBlogAction,
+  UpdateBlogAction,
+  DeleteBlogAction,
+} from "../../store/thunks/blogThunks.js";
+
 export const MyBlogs = () => {
   const dispatch = useDispatch();
   const [blogs, setBlogs] = useState([]);

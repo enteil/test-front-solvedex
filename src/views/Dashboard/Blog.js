@@ -1,12 +1,17 @@
-import { Title } from "../../components/Title/Title.js";
 import React, { useEffect, useState, useCallback } from "react";
 import { useDispatch } from "react-redux";
 import { useLocation } from "react-router-dom";
 import moment from "moment";
-import { GetCommentsAction } from "../../store/thunks/commentThunk.js";
+
+import { Title } from "../../components/Title/Title.js";
 import { Comment } from "../../components/Comment/Comment.js";
 import { Input } from "../../components/Input/Input.js";
-import { CreateCommentAction } from "../../store/thunks/commentThunk";
+
+import {
+  GetCommentsAction,
+  CreateCommentAction,
+} from "../../store/thunks/commentThunk.js";
+
 export const Blog = () => {
   const dispatch = useDispatch();
   const location = useLocation();

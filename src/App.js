@@ -4,17 +4,19 @@ import { useSelector, useDispatch } from "react-redux";
 
 import { Login } from "./views/Auth/Login/Login";
 import { Register } from "./views/Auth/Register/Register";
-import { NotFoundPage } from "./views/NotFoundPage/NotFoundPage";
-
 import { Dashboard } from "./views/Dashboard/Dashboard";
 import { MyBlogs } from "./views/Dashboard/MyBlogs";
+import { Blog } from "./views/Dashboard/Blog";
+import { NotFoundPage } from "./views/NotFoundPage/NotFoundPage";
+
 import DashboardLayout from "./layout/DashboardLayout";
+
 import CheckAuth from "./middleware/checkAuth";
 import CheckGuest from "./middleware/checkGuest";
+
 import GlobalSnackbar from "./components/Snackbar/GlobalSnackbar";
 
 import { hideSnackbar } from "./store/slices/snackbarSlice";
-import { Blog } from "./views/Dashboard/Blog";
 
 function App() {
   const dispatch = useDispatch();

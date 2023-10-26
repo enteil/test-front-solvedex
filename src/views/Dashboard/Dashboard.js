@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { useDispatch } from "react-redux";
-import { Title } from "../../components/Title/Title.js";
-import { GetPublicBlogsAction } from "../../store/thunks/blogThunks.js";
-import BlogCard from "../../components/BlogCard/BlogCard.js";
 import { useNavigate } from "react-router-dom";
+
+import { Title } from "../../components/Title/Title.js";
+import BlogCard from "../../components/BlogCard/BlogCard.js";
+
+import { GetPublicBlogsAction } from "../../store/thunks/blogThunks.js";
 
 export const Dashboard = () => {
   const dispatch = useDispatch();

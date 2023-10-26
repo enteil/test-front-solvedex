@@ -4,8 +4,9 @@ import {
   deleteUser,
   setToken,
   setUser,
+  getToken,
+  getUser,
 } from "../../helpers/localStorageHelper";
-import { getToken, getUser } from "../../helpers/localStorageHelper";
 const initialState = {
   token: getToken() || null,
   user: getUser() || null,
